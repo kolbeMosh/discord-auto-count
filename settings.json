@@ -1,0 +1,28 @@
+{
+    // Use the Browser Version of Discord and in the Dev console run the code found here:
+    /*
+    window.webpackChunkdiscord_app.push([
+        [Math.random()],
+        {},
+        req => {
+          for (const m of Object.keys(req.c)
+            .map(x => req.c[x].exports)
+            .filter(x => x)) {
+            if (m.default && m.default.getToken !== undefined) {
+              return copy(m.default.getToken());
+            }
+            if (m.getToken !== undefined) {
+              return copy(m.getToken());
+            }
+          }
+        },
+      ]);
+      console.log('%cWorked!', 'font-size: 50px');
+      console.log(`%cYou now have your token in the clipboard!`, 'font-size: 16px'); 
+      */
+    "token":"",
+    // The name of the server you want to run this bot on NOTE: this is to prevent responding to servers you don't want to
+    // if you want multiple servers you can do that by making this statement an array like this ["server1", "server2"]
+    // You will just need to edit the "msg.guild.name === settings.serverName" statement to be "settings.serverName.includes(msg.guild.name)"
+    "serverName":""
+}
